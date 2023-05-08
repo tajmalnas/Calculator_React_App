@@ -1,0 +1,130 @@
+body {
+  background: rgba(22, 22, 21, 0.932);
+}
+.App {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.layout {
+  height: 65%;
+  width: 30%;
+  background: #1f1117;
+  border: rgb(219, 32, 188) 0.15rem solid;
+  box-shadow: 0 0 50px 15px #bc48e0;
+}
+
+.output {
+  padding-left: 1px;
+  height: 22%;
+  width: 100%;
+  background: rgba(19, 1, 31, 0.733);
+  color: white;
+  border-bottom: rgb(196, 12, 165) 0.15rem solid;
+}
+
+.inner {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 5px;
+  font-size: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  height: 15%;
+  margin: 5px;
+}
+
+.element {
+  display: flex;
+  font-size: 20px;
+  width: 20%;
+  height: 60%;
+  /* background: rgb(99, 202, 228); */
+  /* background: rgb(255, 20, 147); */
+  border: rgb(255, 20, 147) 0.1rem solid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  margin-left: 3%;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgb(255, 20, 147);
+}
+
+.element:hover {
+  scale: 110%;
+  background: rgb(255, 20, 147);
+  color: white;
+}
+
+.elementEqual {
+  display: flex;
+  font-size: 20px;
+  width: 20%;
+  height: 60%;
+  border: rgb(201, 247, 94) 0.1rem solid;
+  color: rgb(201, 247, 94);
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  margin-left: 3%;
+  cursor: pointer;
+}
+
+.elementEqual:hover {
+  scale: 110%;
+  background-color: rgb(229, 255, 0);
+  color: black;
+}
+
+.elementOperator {
+  display: flex;
+  font-size: 22px;
+  width: 20%;
+  height: 80%;
+  /* background: rgb(202, 117, 241); */
+  border: rgb(127, 255, 0) 0.1rem solid;
+  color: rgb(127, 255, 0);
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  margin-left: 3%;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.elementOperator:hover {
+  scale: 105%;
+  background: rgb(127, 255, 0);
+  color: black;
+}
+
+.switch {
+  position: relative;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@media screen and (max-width: 680px) {
+  .layout {
+    width: 70%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .layout {
+    width: 90%;
+    height: 80%;
+  }
+}
